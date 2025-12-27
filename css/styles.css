@@ -206,6 +206,7 @@ a {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .btn:hover,
@@ -290,16 +291,19 @@ a {
 
 .team__list {
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
   text-align: center;
 }
 
-.team li {
+.team__item {
   background-color: var(--white);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team__title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   text-align: center;
   color: var(--navyBlue);
   font-size: 36px;
@@ -361,6 +365,11 @@ a {
 .portfolio__title {
   text-align: center;
   margin-bottom: 72px;
+  font-style: Bold;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--navyBlue);
 }
 
 .portfolio__wrapper {
@@ -387,6 +396,25 @@ a {
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio__name {
+  padding-bottom: 12px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--navyBlue);
+}
+
+.portfolio__category {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--slate);
 }
 
 .portfolio__overlay {
